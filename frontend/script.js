@@ -10,7 +10,7 @@ async function loadDashboardData() {
   const userId = urlParams.get('id') || 1;
   
   try {
-    const response = await fetch(`http://localhost:3001/api/user/${userId}`);
+    const response = await fetch(`https://intern-dashboard-y8am.onrender.com/api/user/${userId}`);
     const userData = await response.json();
     
     document.getElementById('userName').textContent = userData.name;
@@ -32,7 +32,7 @@ async function loadDashboardData() {
 
 async function loadLeaderboard() {
   try {
-    const response = await fetch('http://localhost:3001/api/leaderboard');
+    const response = await fetch('https://intern-dashboard-y8am.onrender.com/api/leaderboard');
     const leaderboardData = await response.json();
     
     const tableBody = document.querySelector('#leaderboard tbody');

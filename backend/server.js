@@ -47,5 +47,5 @@ app.get('/api/leaderboard', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+  console.log(`Server running at https://intern-dashboard-y8am.onrender.com:${PORT}`);
 });
